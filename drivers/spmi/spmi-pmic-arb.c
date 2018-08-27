@@ -624,6 +624,7 @@ static void __pmic_arb_chained_irq(struct spmi_pmic_arb *pa, bool show)
 			}
 		}
 	}
+	return true;
 }
 
 static void pmic_arb_chained_irq(struct irq_desc *desc)
